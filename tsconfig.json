@@ -1,0 +1,27 @@
+{
+    "extends": "@tsconfig/node22/tsconfig.json",
+    "compilerOptions": {
+        /* Base Options */
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "target": "ES2022",
+        "moduleDetection": "force",
+        "isolatedModules": true,
+        /* Sequelize */
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        /* Strictness */
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        /* Bundled projects */
+        "module": "EsNext",
+        "moduleResolution": "Bundler",
+        "rootDir": "./",
+        "paths": {
+            "#*": ["./src/*"]
+        },
+        "outDir": "./dist"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist", "node_modules"]
+}

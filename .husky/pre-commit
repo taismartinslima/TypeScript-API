@@ -1,0 +1,32 @@
+echo '🕦 Running Tests before committing'
+echo 'this may take a while, please be patient.'
+
+# Check if the tests are passing
+npm run test:run || {
+    echo '❌ You have issue in your code, please check tests.'
+    echo 'Run npm run test, make changes and try committing again.';
+    false;
+}
+
+echo '🕦 Checking types before committing'
+echo 'this may take a while, please be patient.'
+
+# Check types
+npm run type-check || {
+    echo '❌ You have issue in your code, please check types.'
+    echo 'Run npm run type-check, make changes and try committing again.';
+    false;
+}
+
+echo '🕦 Linting your changes before committing'
+echo 'this may take a while, please be patient.'
+
+# Check ESLint Standards
+npx lint-staged ||
+(
+    echo '❌ You have issue in your code, please check linter.'
+    echo 'Run npm run lint, make changes and try committing again.';
+    false;
+)
+
+echo '✅ No errors found: committing this now.... 🚀'
