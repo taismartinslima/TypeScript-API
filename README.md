@@ -12,6 +12,7 @@ It was quite a wonderful teaching exercise.
 - __ESLint__: Static code analysis to identify and fix problematic patterns as they happen.
 - __Prettier__: Code formatting to ensure consistency and aesthetically pleasing code.
 - __CORS__: Handling Cross-Origin Resource Sharing to allow controlled access to resources from different domains.
+- __Vitest__: Testing library for Test Driven Development approach.
 - __Workflows & Scripts__: Environment specific scripts handle not only linting and formatting, but also the test environment before commiting. Additional safeguards are used using GitHub Actions. 
 
 ## Project Setup
