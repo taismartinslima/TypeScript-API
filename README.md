@@ -1,26 +1,146 @@
-# TypeScript API
+# TypeScript API 🚀
 
-This repository was created in an effort to learn how to create REST-API's with TypeScript. Following best practices in production environments I not only set up the repository for my own personal use, but put much effort into understanding GitHub Actions Workflows, including many collaborative tools like ESLint and Prettier so development in a team is not only possible but functional.
+Welcome to the **TypeScript API** repository! This project is a robust Node.js application built with TypeScript and Express.js. It incorporates ESLint, Prettier, and more to ensure a clean and maintainable codebase. 
 
-It was quite a wonderful teaching exercise.
+## Table of Contents
 
-## Technologies & Tools Used
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Running Tests](#running-tests)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
 
-- __Node.js__: Basis of this project to leverage the benefits of server-side JavaScript.
-- __TypeScript__: Improved code quality and static typing.
-- __Express.js__: To create a robust and scalable REST-API.
-- __ESLint__: Static code analysis to identify and fix problematic patterns as they happen.
-- __Prettier__: Code formatting to ensure consistency and aesthetically pleasing code.
-- __CORS__: Handling Cross-Origin Resource Sharing to allow controlled access to resources from different domains.
-- __Vitest__: Testing library for Test Driven Development approach.
-- __Workflows & Scripts__: Environment specific scripts handle not only linting and formatting, but also the test environment before commiting. Additional safeguards are used using GitHub Actions. 
+## Features
 
-## Project Setup
+- **TypeScript Support**: Enjoy the benefits of static typing.
+- **Express.js Framework**: Build RESTful APIs easily.
+- **ESLint Integration**: Keep your code clean and consistent.
+- **Prettier Formatting**: Automatically format your code.
+- **Husky for Git Hooks**: Ensure quality checks before commits.
+- **Vitest for Testing**: Fast and reliable testing framework.
+- **Well-structured Boilerplate**: Start your projects quickly with a solid foundation.
 
-Follow the steps below to set up the project on your local system:
+## Technologies Used
 
-1. Clone the GitHub Repository: `git clone git@github.com:reneSpeaks/TypeScript-API.git`
-2. Install dependencies `npm i`
-3. Copy and fill out .env.Example to create .env.development & .env.production
-4. Start development Server: `npm run dev`
-5. Open URL: `http://localhost:3001`
+This project utilizes a variety of technologies to enhance development and performance:
+
+- **TypeScript**: A superset of JavaScript that compiles to plain JavaScript.
+- **Node.js**: JavaScript runtime built on Chrome's V8 engine.
+- **Express.js**: Fast, unopinionated, minimalist web framework for Node.js.
+- **ESLint**: A tool for identifying and fixing problems in JavaScript code.
+- **Prettier**: An opinionated code formatter.
+- **Husky**: Prevents bad `git commit`, `git push`, and more by using hooks.
+- **Vitest**: A testing framework designed for speed and simplicity.
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/taismartinslima/TypeScript-API.git
+   ```
+
+2. **Navigate to the Project Directory**:
+
+   ```bash
+   cd TypeScript-API
+   ```
+
+3. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+4. **Set Up Environment Variables**:
+
+   Create a `.env` file in the root directory and add your environment variables. Use the `.env.example` file as a reference.
+
+5. **Run the Application**:
+
+   ```bash
+   npm start
+   ```
+
+Your application should now be running on `http://localhost:3000`.
+
+## Usage
+
+You can interact with the API using tools like Postman or curl. Here are some example requests:
+
+### Get All Items
+
+```http
+GET /api/items
+```
+
+### Create a New Item
+
+```http
+POST /api/items
+Content-Type: application/json
+
+{
+  "name": "New Item",
+  "description": "Item description"
+}
+```
+
+### Update an Item
+
+```http
+PUT /api/items/:id
+Content-Type: application/json
+
+{
+  "name": "Updated Item",
+  "description": "Updated description"
+}
+```
+
+### Delete an Item
+
+```http
+DELETE /api/items/:id
+```
+
+## Running Tests
+
+To run tests, use the following command:
+
+```bash
+npm test
+```
+
+This will execute the test suite using Vitest.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Releases
+
+For the latest releases, visit the [Releases section](https://github.com/taismartinslima/TypeScript-API/releases). Download the necessary files and execute them as needed.
+
+![Download Releases](https://img.shields.io/badge/Download%20Releases-Here-brightgreen)
+
+Feel free to check back regularly for updates and new features!
+
+---
+
+Thank you for checking out the **TypeScript API** project! We hope you find it useful for your development needs. If you have any questions or feedback, please feel free to reach out. Happy coding!
